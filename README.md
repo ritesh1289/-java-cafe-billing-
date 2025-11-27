@@ -22,4 +22,4 @@ A simple Java console application that allows users to order items from a café 
 - Arrays
 
 ## Author
-Your Name
+Your Name Ritesh Patwa
