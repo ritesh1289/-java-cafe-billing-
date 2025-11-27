@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class shop {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double conversionRate = 83.0;
+
+        String[] items = {"Coffee", "Tea", "Sandwich", "Cake"};
+        double[] pricesUSD = {2.5, 1.5, 3.0, 2.0};
+        double[] pricesINR = new double[pricesUSD.length];
+
+        for (int i = 0; i < pricesUSD.length; i++) {
+            pricesINR[i] = pricesUSD[i] * conversionRate;
+        }
+
+        System.out.println("=================================");
+        System.out.println("      ☕ Welcome to Java Café ☕");
+        System.out.println("=================================");
+        System.out.println("Menu (Prices in ₹):");
+        for (int i = 0; i < items.length; i++) {
+            System.out.printf("%d. %s - ₹%.2f%n", (i + 1), items[i], pricesINR[i]);
+        }
+        System.out.println("=================================");
+
+        double total = 0;
+        char more;
+
+        do {
+            System.out.print("Enter the number of the item you want: ");
+            int choice = scanner.nextInt();
+
+            if (choice >= 1 && choice <= items.length) {
+                System.out.print("Enter quantity: ");
+                int qty = scanner.nextInt();
+
+                double cost = pricesINR[choice - 1] * qty;
+                total += cost;
+
+                System.out.printf("%d x %s added. Subtotal: ₹%.2f%n", qty, items[choice - 1], cost);
+            } else {
+                System.out.println("Invalid choice! Please try again.");
+            }
+
+            System.out.print("Do you want to order more? (y/n): ");
+            more = scanner.next().charAt(0);
+
+        } while (more == 'y' || more == 'Y');
+
+        System.out.println("\n=================================");
+        System.out.printf("Your total bill is: ₹%.2f%n", total);
+        System.out.println("Thank you for visiting Java Café! ☕");
+        System.out.println("=================================");
+
+        scanner.close();
+    }
+}
