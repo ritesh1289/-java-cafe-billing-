@@ -3,6 +3,8 @@
 A simple and fully functional Java-based Café Billing System that allows customers to order items, calculates prices in INR using a USD-to-INR conversion rate, and generates a final bill.
 This console-based mini-project is beginner-friendly and great for learning arrays, loops, user input handling, and basic billing logic in Java.
 
+---
+
 🎮 How It Works
 
 Use the console to interact with the menu:
@@ -16,6 +18,8 @@ Enter quantity
 Continue ordering more items
 
 View the final total bill
+
+---
 
 ✨ Features
 
@@ -35,16 +39,24 @@ Uses arrays to store item names and prices
 
 Uses loops for repeated ordering
 
+---
+
 🛠 Requirements
 
 Java JDK 8 or higher
 
 Console/Terminal to run the Java file
 
+---
+
 ▶ How to Run
 
 Clone the repository:
 
-git clone https://github.com/ritesh1289/-java-cafe-billing-/blob/main/Java_Cafe_Code
-## Author
-Your Name Ritesh Patwa
+---
+
+Git clone https://github.com/ritesh1289/-java-cafe-billing-/blob/main/Java_Cafe_Code
+
+---
+## Author By 
+         Ritesh Patwa
