@@ -49,7 +49,7 @@ Console/Terminal to run the Java file
 
 ---
 
-##Git clone
+Git clone
                   https://github.com/ritesh1289/-java-cafe-billing-/blob/main/Java_Cafe_Code
 
 ---
